@@ -65,14 +65,14 @@ nav ul {
     list-style: none;
     position: fixed;
     right: 10px;
-    top: 50%
+    top: 45%
 }
 
 nav ul li {
     background: #fff;
     margin-bottom: 10px;
-    height: 8px;
-    width: 8px
+    height: 40px;
+    width: 40px
 }
 
 .code {
@@ -103,32 +103,6 @@ nav ul li {
     margin: 200px auto 0;
     cursor: pointer
 }
-
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-#menu {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    width: 8em;
-    margin-top: -2.5em;
-}
-
 
 .introduction {
     /*background: #003049*/
