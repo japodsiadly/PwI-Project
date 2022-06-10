@@ -5,16 +5,17 @@ html {
 
 a {
     color: #fff;
-    text-decoration: none
+    margin: 30px
 }
 
 h1 {
     font-size: 64px;
-    margin-bottom: 15px
+    margin-bottom: 50px
 }
 
 h4 {
-    font-size: 24px
+    font-size: 24px;
+    margin-bottom: 30px
 }
 
 p {
@@ -54,8 +55,7 @@ section {
 }
 
 .content {
-    /*width: 1000px;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     text-align: center;
     padding-top: 150px
 }
@@ -84,26 +84,6 @@ nav ul li {
     width: 300px
 }
 
-.arrowdown {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 100px 100px 0;
-    border-color: #fff transparent transparent;
-    margin: 200px auto 0;
-    cursor: pointer
-}
-
-.arrowup {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 100px 100px;
-    border-color: transparent transparent #fff;
-    margin: 200px auto 0;
-    cursor: pointer
-}
-
 .introduction {
     /*background: #003049*/
     background: #006d77
@@ -116,7 +96,8 @@ nav ul li {
 
 .skills {
     /*background: #fcbf49*/
-    background: #ffddd2
+    background: #ffddd2;
+    color: black;
 }
 
 .contact {
