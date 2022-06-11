@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    default: localpwi
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: "noreply.portfolio213@gmail.com"
+    password: "erdjwiubdoewybxg"
+    port: '587'
