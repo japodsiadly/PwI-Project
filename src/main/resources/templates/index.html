@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title> Portfolio Jakuba Podsiadłego </title>
+    <link rel="shortcut icon" href="https://japodsiadly.github.io/J-letter.jpg">
+    <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<main>
+    <div id="mask">
+        <nav>
+            <ul>
+                <li data-section="0"></li>
+                <li data-section="1"></li>
+                <li data-section="2"></li>
+                <li data-section="3"></li>
+            </ul>
+        </nav>
+
+        <div id="container">
+            <section class="introduction">
+                <div class="content container">
+                    <h1 class="header"> Nazywam się Jakub Podsiadły </h1>
+                    <h2 class="subheader"> Jeżeli chce wiedzieć więcej o mnie zapraszam do mojego portfolio. </h2>
+                </div>
+            </section>
+
+            <section class="aboutMe">
+                <div class="content container">
+                    <div class="row">
+                        <h1 class="header">O mnie:</h1>
+                    </div>
+                    <div class="row">
+                        <h2 class="subheader"> Jestem studentem 3 roku na kierunku informatycznym. </h2>
+                    </div>
+
+                    <div class="col-sm-6" style="float: left">
+                        <div class="row">
+                            <h2 class="subheader"> Moje mocne strony: </h2>
+                        </div>
+                        <ul>
+                            <li> Umiem dobrze organizować sobie pracę</li>
+                            <li> przykładam dużą uwagę do szczegółów</li>
+                            <li> szybko uczę się nowych technologii</li>
+                            <li> umiem poradzić sobie z każdym zadaniem</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6" style="float: left">
+                        <div class="row">
+                            <h2 class="subheader"> Co lubię, czym się interesuję: </h2>
+                        </div>
+                        <ul>
+                            <li> Czytać książki</li>
+                            <li> Gry planszowe</li>
+                            <li> Sport</li>
+                            <li> Historia</li>
+                            <li> Gotowanie</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills">
+                <div class="col-sm-12 content">
+                    <h1 class="header"> Moje Umiejętności: </h1>
+
+                    <p>Java Spring</p>
+                    <p>JavaScript</p>
+                    <p>C#</p>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="col-sm-12 content">
+                    <h1 class="header">Kontakt:</h1>
+                    <h2 class="subheader"> Link do mojego Gita: </h2>
+                    <a href="https://github.com/japodsiadly"> https://github.com/japodsiadly </a>
+
+                    <h2 class="subheader"> Możesz wysłać do mnie wiadomość na mój email tutaj: </h2>
+
+                    <form>
+                        <div class="row mb-3 col-8 contactFORM">
+                            <label for="subjectInput" class="form-label">Temat:</label>
+                            <input type="text" class="form-control" id="subjectInput"
+                                   aria-describedby="subjectHelpBlock">
+                            <div id="subjectHelpBlock" class="form-text">
+                                Max 50 znaków.
+                            </div>
+                        </div>
+
+<!--                        <div class="row mb-3 col-8 contactFORM">-->
+<!--                            <label for="messageInput" class="form-label">Napisz wiadomość do mnie</label>-->
+<!--                            <input type="text" class="form-control" id="messageInput"-->
+<!--                                   aria-describedby="messageHelpBlock">-->
+<!--                            <div id="messageHelpBlock" class="form-text">-->
+<!--                                Max 250 znaków.-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+                        <div class="row mb-3 col-8 contactFORM">
+                            <label for="messageInput" class="form-label">Napisz wiadomość do mnie</label>
+                            <textarea rows="8" cols="60" class="form-control" style="resize: none" name="message"
+                                      id="messageInput" aria-describedby="messageHelpBlock"></textarea>
+                            <div id="messageHelpBlock" class="form-text">
+                                Max 1000 znaków.
+                            </div>
+                        </div>
+
+                        <div class="row contactFORM" id="buttonDiv">
+                            <button type="button" id="sendMail" class="btn btn-primary">Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="/js/script.js" th:src="@{/js/script.js}"></script>
+<script type="text/javascript" src="/js/lescroll.js" th:src="@{/js/lescroll.js}"></script>
+<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

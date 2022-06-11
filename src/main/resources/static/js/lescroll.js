@@ -25,7 +25,8 @@ var leScroll = function (e) {
     for (var n = t.getElementsByTagName("li"), i = {up: 38, down: 40}, l = function (t) {
         var o = 0, n = t || e.event;
         n.wheelDelta ? o = (e.opera ? -1 : 1) * n.wheelDelta / 120 : n.detail && (o = -n.detail / 3), o && c(o)
-    }, c = function (e) {
+    },
+             c = function (e) {
         o.scrolling || (e > 0 ? (o.scrolling = !0, o.moveUp(), o.setScrollTimeout(1500)) : 0 >= e && (o.scrolling = !0, o.moveDown(), o.setScrollTimeout(1500)))
     }, r = function () {
         o.moveTo(event.target.getAttribute("data-section"))

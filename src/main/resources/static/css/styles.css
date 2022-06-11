@@ -1,20 +1,20 @@
 html {
     font-family: Roboto, sans-serif;
-    color: #fff
+    color: white;
 }
 
-a {
-    color: #fff;
-    margin: 30px
-}
-
-h1 {
-    font-size: 64px;
+.header {
+    font-size: 100px;
     margin-bottom: 50px
 }
 
-h4 {
-    font-size: 24px;
+.subheader{
+    font-size: 60px;
+    margin-bottom: 40px
+}
+
+.text {
+    font-size: 40px;
     margin-bottom: 30px
 }
 
@@ -69,38 +69,56 @@ nav ul {
 }
 
 nav ul li {
-    background: #fff;
+    background: white;
     margin-bottom: 10px;
     height: 40px;
-    width: 40px
-}
-
-.code {
-    margin-top: 15px;
-    background: #fff;
-    border: 1px dotted #000;
-    padding: 5px 0;
-    color: #000;
-    width: 300px
+    width: 40px;
+    border-radius: 100%;
+    border: solid black 1px;
 }
 
 .introduction {
-    /*background: #003049*/
-    background: #006d77
+    /*background-image: linear-gradient(to right, #ffd89b, #19547b);*/
+    background: #273043;
+    color: #0496ff
 }
 
 .aboutMe {
-    /*background: #f77f00*/
-    background: #83c5be
+    /*background-image: linear-gradient(#19547b, #808080);*/
+    background: #e8d2ae;
+    color: #09814a;
+    text-align: left
 }
 
 .skills {
-    /*background: #fcbf49*/
-    background: #ffddd2;
-    color: black;
+    /*background-image: linear-gradient(#808080, #3fada8);*/
+
+    background: #e09891;
+    color: #3e1929
 }
 
 .contact {
-    /*background: #d62828*/
-    background: #e29578
+    /*background-image: linear-gradient(#3fada8, #FD746C);*/
+
+    background: #a5ffd6;
+    /*color: #8f5c38*/
+    color: #6d462b
+}
+.contact a {
+    color: #6d462b;
+    margin: 30px
+}
+
+.contactFORM {
+    display: inline-block;
+    text-align: -webkit-center;
+    width: 80%;
+}
+
+#sendMail {
+    width: 100px;
+}
+
+.textNode {
+    font-size: 100px;
 }
