@@ -7,7 +7,7 @@ var leScroll = function (e) {
     }, e.moveUp = function () {
         0 !== t && (t--, e.move())
     }, e.moveDown = function () {
-        t !== o && (t++, e.move())
+        t < o && (t++, e.move())
     }, e.moveTo = function (o) {
         t = o, e.move()
     }, e.addEvent = function (t, o) {
