@@ -58,11 +58,13 @@ function animationAdding(sectionNumber) {
         } else {
             return;
         }
-    } else if (sectionNumber === 2) {
-
-    } else if (sectionNumber === 3) {
-
-    } else {
-        return;
+    } else if (parseInt(sectionNumber) === 2) {
+        if (!document.querySelector("#section2_slideDown_0").classList.contains("slideRight")) {
+            document.querySelector("#section2_slideDown_0").classList.add("slideDown_section_2_0");
+            document.querySelector("#section2_slideDown_1").classList.add("slideDown_section_2_1");
+            document.querySelector("#section2_slideDown_2").classList.add("slideDown_section_2_2");
+        } else {
+            return;
+        }
     }
 }
