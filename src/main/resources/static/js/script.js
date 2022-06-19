@@ -1,3 +1,7 @@
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// AOS.init();
+
 const sendButton = document.querySelector('#sendMail');
 sendButton.addEventListener('click', () => {
     let subjectInput = document.querySelector('#subjectInput');

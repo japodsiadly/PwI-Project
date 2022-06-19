@@ -8,14 +8,13 @@ html {
     margin-bottom: 50px
 }
 
-.subheader{
+.subheader {
     font-size: 60px;
     margin-bottom: 40px
 }
 
 .text {
-    font-size: 40px;
-    margin-bottom: 30px
+    font-size: 30px;
 }
 
 p {
@@ -38,12 +37,12 @@ p {
     top: 0;
     -webkit-transition-property: top, bottom;
     -webkit-transition-duration: .5s;
-    -moz-property: top, bottom;
-    -moz-duration: .5s;
-    -ms-property: top, bottom;
-    -ms-duration: .5s;
-    -o-property: top, bottom;
-    -o-duration: .5s;
+    /*-moz-property: top, bottom;*/
+    /*-moz-duration: .5s;*/
+    /*-ms-property: top, bottom;*/
+    /*-ms-duration: .5s;*/
+    /*-o-property: top, bottom;*/
+    /*-o-duration: .5s;*/
     transition-property: top, bottom;
     transition-duration: .5s
 }
@@ -71,39 +70,34 @@ nav ul {
 nav ul li {
     background: white;
     margin-bottom: 10px;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     border: solid black 1px;
 }
 
 .introduction {
-    /*background-image: linear-gradient(to right, #ffd89b, #19547b);*/
     background: #273043;
     color: #0496ff
 }
 
 .aboutMe {
-    /*background-image: linear-gradient(#19547b, #808080);*/
     background: #e8d2ae;
     color: #09814a;
     text-align: left
 }
 
 .skills {
-    /*background-image: linear-gradient(#808080, #3fada8);*/
-
     background: #e09891;
     color: #3e1929
 }
 
 .contact {
-    /*background-image: linear-gradient(#3fada8, #FD746C);*/
-
     background: #a5ffd6;
     /*color: #8f5c38*/
     color: #6d462b
 }
+
 .contact a {
     color: #6d462b;
     margin: 30px
@@ -120,5 +114,109 @@ nav ul li {
 }
 
 .textNode {
-    font-size: 100px;
+    font-size: 30px;
+}
+
+
+body {
+    /*height: 100vh;*/
+    align-items: center;
+    display: flex;
+}
+
+.slide-effect {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-animated, .slideDown, .slideUp, .slideRight, .slideLeft {
+    position: relative;
+    /*font-family: tahoma;*/
+    /*font-size: 25px;*/
+    opacity: 0;
+}
+
+.text-animated {
+    top: 40px;
+    font-weight: bold;
+    animation: slideUp ease .4s forwards;
+}
+
+.slideDown {
+    top: -40px;
+    left: 5px;
+    animation: slideDown ease .4s forwards .6s;
+}
+
+.slideUp {
+    top: 40px;
+    left: 10px;
+    animation: slideUp ease .5s forwards 1.2s;
+}
+
+.slideRight {
+    left: -80px;
+    animation: slideRight ease .5s forwards 1.2s;
+}
+
+.slideLeft {
+    left: 80px;
+    animation: slideLeft ease .5s forwards 2.4s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(80px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide-effect, .text, .slideDown, .slideUp {
+        font-size: 15px;
+    }
+}
+
+.image {
+    width: 70%;
+    align-content: center;
+    margin: auto;
 }
