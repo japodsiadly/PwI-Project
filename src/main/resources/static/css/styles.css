@@ -4,21 +4,21 @@ html {
 }
 
 .header {
-    font-size: 100px;
-    margin-bottom: 50px
+    /*font-size: 100px;*/
+    /*margin-bottom: 50px*/
 }
 
 .subheader {
-    font-size: 60px;
-    margin-bottom: 40px
+    /*font-size: 60px;*/
+    /*margin-bottom: 40px*/
 }
 
 .text {
-    font-size: 30px;
+    /*font-size: 30px;*/
 }
 
 p {
-    font-size: 16px
+    /*font-size: 16px*/
 }
 
 #mask {
@@ -56,7 +56,7 @@ section {
 .content {
     /*margin: 0 auto;*/
     text-align: center;
-    padding-top: 150px
+    padding-top: 10%
 }
 
 nav ul {
@@ -106,7 +106,7 @@ nav ul li {
 .contactFORM {
     display: inline-block;
     text-align: -webkit-center;
-    width: 80%;
+    width: 60%;
 }
 
 #sendMail {
@@ -136,16 +136,14 @@ body {
 
 .text-animated, .slideDown, .slideUp, .slideRight, .slideLeft {
     position: relative;
-    /*font-family: tahoma;*/
-    /*font-size: 25px;*/
     opacity: 0;
 }
 
-.text-animated {
-    top: 40px;
-    font-weight: bold;
-    animation: slideUp ease .4s forwards;
-}
+/*.text-animated {*/
+/*    top: 40px;*/
+/*    font-weight: bold;*/
+/*    animation: slideUp ease .4s forwards;*/
+/*}*/
 
 .slideDown {
     top: -40px;
