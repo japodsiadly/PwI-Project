@@ -4,17 +4,15 @@ html {
 }
 
 .header {
-    /*font-size: 100px;*/
-    /*margin-bottom: 50px*/
+    font-size: 5vw;
 }
 
 .subheader {
-    /*font-size: 60px;*/
-    /*margin-bottom: 40px*/
+    font-size: 3vw;
 }
 
 .text {
-    /*font-size: 30px;*/
+    font-size: 1.5vw;
 }
 
 p {
@@ -37,12 +35,14 @@ p {
     top: 0;
     -webkit-transition-property: top, bottom;
     -webkit-transition-duration: .5s;
+
     /*-moz-property: top, bottom;*/
     /*-moz-duration: .5s;*/
     /*-ms-property: top, bottom;*/
     /*-ms-duration: .5s;*/
     /*-o-property: top, bottom;*/
     /*-o-duration: .5s;*/
+
     transition-property: top, bottom;
     transition-duration: .5s
 }
@@ -56,7 +56,7 @@ section {
 .content {
     /*margin: 0 auto;*/
     text-align: center;
-    padding-top: 10%
+    /*padding-top: 5%*/
 }
 
 nav ul {
@@ -134,7 +134,7 @@ body {
     align-items: center;
 }
 
-.text-animated, .slideDown, .slideUp, .slideRight, .slideLeft {
+.text-animated, .slideDown, .slideUp, .slideRight, .slideLeft, .slideDown_section_2_0, .slideDown_section_2_1, .slideDown_section_2_2 {
     position: relative;
     opacity: 0;
 }
@@ -151,6 +151,24 @@ body {
     animation: slideDown ease .4s forwards .6s;
 }
 
+.slideDown_section_2_0 {
+    top: -40px;
+    left: 5px;
+    animation: slideDown ease .4s forwards .6s;
+}
+
+.slideDown_section_2_1 {
+    top: -40px;
+    left: 5px;
+    animation: slideDown ease .4s forwards 1.2s;
+}
+
+.slideDown_section_2_2 {
+    top: -40px;
+    left: 5px;
+    animation: slideDown ease .4s forwards 1.8s;
+}
+
 .slideUp {
     top: 40px;
     left: 10px;
@@ -164,7 +182,7 @@ body {
 
 .slideLeft {
     left: 80px;
-    animation: slideLeft ease .5s forwards 2.4s;
+    animation: slideLeft ease .5s forwards 1.8s;
 }
 
 @keyframes slideUp {
@@ -207,14 +225,14 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .slide-effect, .text, .slideDown, .slideUp {
-        font-size: 15px;
-    }
-}
+/*@media only screen and (max-width: 600px) {*/
+/*    .slide-effect, .text, .slideDown, .slideUp {*/
+/*        font-size: 15px;*/
+/*    }*/
+/*}*/
 
 .image {
-    width: 70%;
+    width: 20vw;
     align-content: center;
     margin: auto;
 }
