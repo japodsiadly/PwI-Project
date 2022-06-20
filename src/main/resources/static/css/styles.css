@@ -15,10 +15,6 @@ html {
     font-size: 1.5vw;
 }
 
-p {
-    /*font-size: 16px*/
-}
-
 #mask {
     z-index: 0;
     height: 100vh;
@@ -35,14 +31,12 @@ p {
     top: 0;
     -webkit-transition-property: top, bottom;
     -webkit-transition-duration: .5s;
-
-    /*-moz-property: top, bottom;*/
-    /*-moz-duration: .5s;*/
-    /*-ms-property: top, bottom;*/
-    /*-ms-duration: .5s;*/
-    /*-o-property: top, bottom;*/
-    /*-o-duration: .5s;*/
-
+    -moz-property: top, bottom;
+    -moz-duration: .5s;
+    -ms-property: top, bottom;
+    -ms-duration: .5s;
+    -o-property: top, bottom;
+    -o-duration: .5s;
     transition-property: top, bottom;
     transition-duration: .5s
 }
@@ -54,9 +48,8 @@ section {
 }
 
 .content {
-    /*margin: 0 auto;*/
     text-align: center;
-    /*padding-top: 5%*/
+    padding-top: 5vh;
 }
 
 nav ul {
@@ -78,29 +71,28 @@ nav ul li {
 
 .introduction {
     background: #273043;
-    color: #0496ff
+    color: #0496ff;
 }
 
 .aboutMe {
     background: #e8d2ae;
     color: #09814a;
-    text-align: left
+    text-align: left;
 }
 
 .skills {
     background: #e09891;
-    color: #3e1929
+    color: #3e1929;
 }
 
 .contact {
     background: #a5ffd6;
-    /*color: #8f5c38*/
-    color: #6d462b
+    color: #6d462b;
 }
 
 .contact a {
     color: #6d462b;
-    margin: 30px
+    margin: 30px;
 }
 
 .contactFORM {
@@ -117,33 +109,15 @@ nav ul li {
     font-size: 30px;
 }
 
-
 body {
-    /*height: 100vh;*/
     align-items: center;
     display: flex;
-}
-
-.slide-effect {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-animated, .slideDown, .slideUp, .slideRight, .slideLeft, .slideDown_section_2_0, .slideDown_section_2_1, .slideDown_section_2_2 {
     position: relative;
     opacity: 0;
 }
-
-/*.text-animated {*/
-/*    top: 40px;*/
-/*    font-weight: bold;*/
-/*    animation: slideUp ease .4s forwards;*/
-/*}*/
 
 .slideDown {
     top: -40px;
@@ -225,14 +199,26 @@ body {
     }
 }
 
-/*@media only screen and (max-width: 600px) {*/
-/*    .slide-effect, .text, .slideDown, .slideUp {*/
-/*        font-size: 15px;*/
-/*    }*/
-/*}*/
-
 .image {
     width: 20vw;
     align-content: center;
     margin: auto;
+}
+
+.listOfStrengths {
+    width: 70vw;
+    height: 70vh;
+}
+
+.listLeft {
+    float: left;
+}
+
+.listRight {
+    float: right;
+    margin-top: 30vh;
+}
+
+.listItem {
+    font-size: 1.5vw;
 }
