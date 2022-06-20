@@ -16,6 +16,23 @@
 <body>
 <main>
     <div id="mask">
+        <div style="position: sticky; z-index: 1">
+
+            <button class="btn btn-danger float-end" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#languageButton"
+                    aria-expanded="false" aria-controls="collapseExample">
+                Zmień język
+            </button>
+
+            <div style="clear: both"></div>
+
+            <div class="collapse float-end langListList text-center" id="languageButton">
+                <div style="background: white; width: 100px">
+                    <div class="langListItem active" language='polish'> Polski</div>
+                    <div class="langListItem" language='english'> English</div>
+                </div>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li data-section="0"></li>
@@ -26,13 +43,14 @@
         </nav>
 
         <div id="container">
-            <section class="introduction ">
+            <section class="introduction">
                 <div class="content container">
                     <div class="slideDown">
-                        <p class="header"> Nazywam się Jakub Podsiadły </p>
+                        <p class="header introductionHeader"> Nazywam się Jakub Podsiadły </p>
                     </div>
-                    <p class="subheader"> Jestem Junior Java Spring developerem </p>
-                    <p class="text"> Jeżeli chcesz wiedzieć więcej o mnie zapraszam do mojego portfolio </p>
+                    <p class="subheader introductionSubheader"> Jestem Junior Java Spring developerem </p>
+                    <p class="text introductionText"> Jeżeli chcesz wiedzieć więcej o mnie zapraszam do mojego
+                        portfolio </p>
                     <div class="image slideUp">
                         <img class="image" th:src="@{/images/programer_image.png}">
                     </div>
@@ -42,34 +60,45 @@
             <section class="aboutMe">
                 <div class="content container align-content-center">
                     <div class="row" id="section1_slideDown">
-                        <h1 class="header">O mnie:</h1>
-                        <h2 class="subheader"> Jestem studentem 3 roku na kierunku informatycznym. </h2>
+                        <h1 class="header aboutMeHeader"> O mnie:</h1>
+                        <h2 class="subheader aboutMeSubheader_0"> Jestem studentem 3 roku na kierunku
+                            informatycznym. </h2>
+                        <p class="subheader aboutMeSubheader_1"> Moje mocne strony: </p>
                     </div>
 
                     <div class="row listOfStrengths">
-                        <div class="col-sm-6 listLeft" id="section1_slideRight">
-                            <div class="row">
-                                <p class="subheader"> Moje mocne strony: </p>
+                        <div class="col-sm-12 ">
+                            <div class="row" id="section1_slideRight_0">
+                                <div class="col-6 listItem aboutMeText_0">
+                                    <p> Umiem dobrze organizować sobie pracę </p>
+                                </div>
+                                <div class="col-6 listItem">
+                                </div>
                             </div>
-                            <ul class="list-unstyled">
-                                <li class="listItem"> Umiem dobrze organizować sobie pracę</li>
-                                <li class="listItem"> Przykładam dużą uwagę do szczegółów</li>
-                                <li class="listItem"> Szybko uczę się nowych technologii</li>
-                                <li class="listItem"> Umiem poradzić sobie z każdym zadaniem</li>
-                            </ul>
-                        </div>
 
-                        <div class="col-sm-6 listRight align-content-end" id="section1_slideLeft">
-                            <div class="row">
-                                <p class="subheader"> Czym się interesuję: </p>
+                            <div class="row" id="section1_slideLeft_0">
+                                <div class="col-6 listItem">
+                                </div>
+                                <div class="col-6 listItem aboutMeText_1">
+                                    <p> Przykładam dużą uwagę do szczegółów </p>
+                                </div>
                             </div>
-                            <ul class="list-unstyled">
-                                <li class="listItem"> Czytanie książek</li>
-                                <li class="listItem"> Grami planszowymi</li>
-                                <li class="listItem"> Sporem</li>
-                                <li class="listItem"> Historią</li>
-                                <li class="listItem"> Gotowaniem</li>
-                            </ul>
+
+                            <div class="row" id="section1_slideRight_1">
+                                <div class="col-6 listItem aboutMeText_2">
+                                    <p> Szybko uczę się nowych technologii </p>
+                                </div>
+                                <div class="col-6 listItem">
+                                </div>
+                            </div>
+
+                            <div class="row" id="section1_slideLeft_1">
+                                <div class="col-6 listItem">
+                                </div>
+                                <div class="col-6 listItem aboutMeText_3">
+                                    <p> Umiem poradzić sobie z każdym zadaniem </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,64 +106,91 @@
 
             <section class="skills">
                 <div class="col-sm-12 content container align-content-center">
-                    <h1 class="header"> Moje Umiejętności: </h1>
+                    <div class="row pb-5">
+                        <h1 class="header skillsHeader"> Moje Umiejętności: </h1>
+                    </div>
+
                     <div class="row skill_container" id="section2_slideDown_0">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                             class="skill_image" alt="javaScript image"/>
-                        <!--                        <p>Java Spring</p>-->
-                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
-                            <div id="springBar" class="w3-container w3-green" style="width:1%">0%</div>
+                        <div class="col-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                                 class="skill_image" alt="javaScript image"/>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="w3-border w3-xlarge loading-bar">
+                                <div id="springBar" class="w3-container w3-green" style="width:1%">0%</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="row skill_container" id="section2_slideDown_1">
-                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
-                            <div id="javaScriptBar" class="w3-container w3-yellow" style="width:1%">0%</div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="w3-border w3-xlarge loading-bar">
+                                <div id="javaScriptBar" class="w3-container w3-yellow" style="width:1%">0%</div>
+                            </div>
                         </div>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                             style="float: right;" class="skill_image" alt="javaScript image"/>
+                        <div class="col-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                 style="float: right;" class="skill_image" alt="javaScript image"/>
+                        </div>
                     </div>
 
                     <div class="row skill_container" id="section2_slideDown_2">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                             class="skill_image" alt="javaScript image"/>
-                        <!--                        <p>C#</p>-->
-                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
-                            <div id="cSharpBar" class="w3-container w3-purple" style="width:1%">0%</div>
+                        <div class="col-3">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                 class="skill_image" alt="javaScript image"/>
+                        </div>
+                        <div class="col-9 d-flex align-items-center">
+                            <div class="w3-border w3-xlarge loading-bar">
+                                <div id="cSharpBar" class="w3-container w3-purple" style="width:1%">0%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="contact">
-                <div class="col-sm-12 content container">
-                    <h1 class="header">Kontakt:</h1>
-                    <h2 class="subheader"> Link do mojego Gita: </h2>
-                    <a href="https://github.com/japodsiadly"> https://github.com/japodsiadly </a>
-
-                    <h2 class="subheader"> Możesz wysłać do mnie wiadomość na mój email tutaj: </h2>
-
-                    <form>
-                        <div class="row mb-3 col-8 contactFORM">
-                            <label for="subjectInput" class="form-label">Temat:</label>
-                            <input type="text" class="form-control" id="subjectInput"
-                                   aria-describedby="subjectHelpBlock">
-                            <div id="subjectHelpBlock" class="form-text">
-                                Max 50 znaków.
-                            </div>
+                <div class=" content container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="header contactHeader"> Kontakt:</h1>
+                            <h2 class="subheader contactSubheader_0"> Link do mojego Gita: </h2>
+                            <a class="text" href="https://github.com/japodsiadly"> https://github.com/japodsiadly </a>
                         </div>
+                    </div>
 
-                        <div class="row mb-3 col-8 contactFORM">
-                            <label for="messageInput" class="form-label">Napisz wiadomość do mnie</label>
-                            <textarea rows="4" cols="60" class="form-control" style="resize: none" name="message"
-                                      id="messageInput" aria-describedby="messageHelpBlock"> </textarea>
-                            <div id="messageHelpBlock" class="form-text"> Max 250 znaków.</div>
-                        </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="subheader contactSubheader_1"> Możesz wysłać do mnie wiadomość na mój email
+                                tutaj: </h2>
+                            <form>
+                                <div class="row mb-3 col-8 contactFORM">
+                                    <label for="subjectInput" class="form-label contactFormSubject">Temat:</label>
+                                    <input type="text" class="form-control" id="subjectInput"
+                                           aria-describedby="subjectHelpBlock">
+                                    <div id="subjectHelpBlock" class="form-text contactFormSubjectHelp">
+                                        Max 50 znaków.
+                                    </div>
+                                </div>
 
-                        <div class="row contactFORM" id="buttonDiv">
-                            <button type="button" id="sendMail" class="btn btn-primary">Wyślij</button>
+                                <div class="row mb-3 col-8 contactFORM">
+                                    <label for="messageInput" class="form-label contactFormMessage">Napisz wiadomość do
+                                        mnie</label>
+                                    <textarea rows="4" cols="60" class="form-control" style="resize: none"
+                                              name="message"
+                                              id="messageInput" aria-describedby="messageHelpBlock"> </textarea>
+                                    <div id="messageHelpBlock" class="form-text contactFormMessageHelp"> Max 250
+                                        znaków.
+                                    </div>
+                                </div>
+
+                                <div class="row contactFORM" id="buttonDiv">
+                                    <button type="button" id="sendMail" class="btn btn-primary contactSendButton">
+                                        Wyślij
+                                    </button>
+                                </div>
+                            </form>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </div>
@@ -147,6 +203,7 @@
 </script>
 
 <script type="text/javascript" src="/js/script.js" th:src="@{/js/script.js}"></script>
+<script type="text/javascript" src="/js/script.js" th:src="@{/js/languages.js}"></script>
 <script type="text/javascript" src="/js/lescroll.js" th:src="@{/js/lescroll.js}"></script>
 <script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 <script src="webjars/jquery/3.4.1/jquery.min.js"></script>

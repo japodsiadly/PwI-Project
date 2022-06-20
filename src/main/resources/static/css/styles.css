@@ -107,6 +107,9 @@ nav ul li {
 
 .textNode {
     font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -114,7 +117,8 @@ body {
     display: flex;
 }
 
-.text-animated, .slideDown, .slideUp, .slideRight, .slideLeft, .slideDown_section_2_0, .slideDown_section_2_1, .slideDown_section_2_2 {
+.text-animated, .slideDown, .slideUp, .slideRight, .slideLeft, .slideDown_section_2_0, .slideDown_section_2_1,
+.slideDown_section_2_2, .slideRight_section_1_0, .slideRight_section_1_1, .slideLeft_section_1_0, .slideLeft_section_1_1 {
     position: relative;
     opacity: 0;
 }
@@ -149,14 +153,24 @@ body {
     animation: slideUp ease .5s forwards 1.2s;
 }
 
-.slideRight {
+.slideRight_section_1_0 {
     left: -80px;
     animation: slideRight ease .5s forwards 1.2s;
 }
 
-.slideLeft {
+.slideRight_section_1_1 {
+    left: -80px;
+    animation: slideRight ease .5s forwards 2.4s;
+}
+
+.slideLeft_section_1_0 {
     left: 80px;
     animation: slideLeft ease .5s forwards 1.8s;
+}
+
+.slideLeft_section_1_1 {
+    left: 80px;
+    animation: slideLeft ease .5s forwards 3s;
 }
 
 @keyframes slideUp {
@@ -210,17 +224,10 @@ body {
     height: 70vh;
 }
 
-.listLeft {
-    float: left;
-}
-
-.listRight {
-    float: right;
-    margin-top: 30vh;
-}
-
 .listItem {
     font-size: 1.5vw;
+    /*font-size: 3vh;*/
+    padding: 5vh;
 }
 
 .skill_image {
@@ -230,6 +237,8 @@ body {
 
 .skill_container {
     width: 70vw;
-    height: 25vh;
-    /*border: solid;*/
+}
+
+.loading-bar {
+    width: 60vw;
 }
