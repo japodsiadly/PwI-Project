@@ -9,17 +9,17 @@ sendButton.addEventListener('click', () => {
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
-    const para = document.createElement("p");
-    para.classList.add('row');
-    para.classList.add('textNode');
+    // const para = document.createElement("p");
+    // para.classList.add('row');
+    // para.classList.add('textNode');
 
-    xhr.onload = () => {
-        // para.removeChild(para.firstElementChild);
-        para.innerHTML = '';
-        let textNode = document.createTextNode("Pomyślnie wysłano wiadomość!");
-        para.appendChild(textNode);
-        buttonDiv.appendChild(para);
-    }
+    // xhr.onload = () => {
+    //     // para.removeChild(para.firstElementChild);
+    //     para.innerHTML = '';
+    //     let textNode = document.createTextNode("Pomyślnie wysłano wiadomość!");
+    //     para.appendChild(textNode);
+    //     buttonDiv.appendChild(para);
+    // }
 
     let mail = {
         subject: subjectInput.value,
@@ -29,7 +29,7 @@ sendButton.addEventListener('click', () => {
 
     xhr.send(json);
 
-    let textNode = document.createTextNode("Wiadomość w trakcie wysyłania...");
-    para.appendChild(textNode);
-    buttonDiv.appendChild(para);
+    // let textNode = document.createTextNode("Wiadomość w trakcie wysyłania...");
+    // para.appendChild(textNode);
+    // buttonDiv.appendChild(para);
 })
