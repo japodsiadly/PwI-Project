@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title> Portfolio Jakuba Podsiadłego </title>
     <link rel="shortcut icon" href="https://japodsiadly.github.io/J-letter.jpg">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -75,24 +76,38 @@
             </section>
 
             <section class="skills">
-                <div class="col-sm-12 content">
+                <div class="col-sm-12 content container align-content-center">
                     <h1 class="header"> Moje Umiejętności: </h1>
-
-                    <div id="section2_slideDown_0">
-                        <p>Java Spring</p>
+                    <div class="row skill_container" id="section2_slideDown_0">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                             class="skill_image" alt="javaScript image"/>
+                        <!--                        <p>Java Spring</p>-->
+                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
+                            <div id="springBar" class="w3-container w3-green" style="width:1%">0%</div>
+                        </div>
                     </div>
 
-                    <div id="section2_slideDown_1">
-                        <p>JavaScript</p>
+                    <div class="row skill_container" id="section2_slideDown_1">
+                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
+                            <div id="javaScriptBar" class="w3-container w3-yellow" style="width:1%">0%</div>
+                        </div>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                             style="float: right;" class="skill_image" alt="javaScript image"/>
                     </div>
-                    <div id="section2_slideDown_2">
-                        <p>C#</p>
+
+                    <div class="row skill_container" id="section2_slideDown_2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                             class="skill_image" alt="javaScript image"/>
+                        <!--                        <p>C#</p>-->
+                        <div class="w3-border w3-xlarge" style="float: left; width: 50vw">
+                            <div id="cSharpBar" class="w3-container w3-purple" style="width:1%">0%</div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="contact">
-                <div class="col-sm-12 content">
+                <div class="col-sm-12 content container">
                     <h1 class="header">Kontakt:</h1>
                     <h2 class="subheader"> Link do mojego Gita: </h2>
                     <a href="https://github.com/japodsiadly"> https://github.com/japodsiadly </a>

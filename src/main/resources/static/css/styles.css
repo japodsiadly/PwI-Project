@@ -222,3 +222,14 @@ body {
 .listItem {
     font-size: 1.5vw;
 }
+
+.skill_image {
+    width: 15vw;
+    float: left;
+}
+
+.skill_container {
+    width: 70vw;
+    height: 25vh;
+    /*border: solid;*/
+}

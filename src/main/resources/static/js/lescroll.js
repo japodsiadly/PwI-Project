@@ -61,10 +61,28 @@ function animationAdding(sectionNumber) {
     } else if (parseInt(sectionNumber) === 2) {
         if (!document.querySelector("#section2_slideDown_0").classList.contains("slideRight")) {
             document.querySelector("#section2_slideDown_0").classList.add("slideDown_section_2_0");
+            move("springBar", 80);
             document.querySelector("#section2_slideDown_1").classList.add("slideDown_section_2_1");
+            move("javaScriptBar", 56);
             document.querySelector("#section2_slideDown_2").classList.add("slideDown_section_2_2");
+            move("cSharpBar", 32);
         } else {
             return;
+        }
+    }
+}
+
+function move(name, percentage) {
+    const elem = document.getElementById(name);
+    let width = 0;
+    let id = setInterval(frame, 40);
+    function frame() {
+        if (width >= percentage) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+            elem.innerHTML = width * 1  + '%';
         }
     }
 }
