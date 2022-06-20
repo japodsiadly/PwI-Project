@@ -220,25 +220,21 @@ body {
 }
 
 .listOfStrengths {
-    width: 70vw;
+    /*width: 70vw;*/
     height: 70vh;
 }
 
 .listItem {
     font-size: 1.5vw;
     /*font-size: 3vh;*/
-    padding: 5vh;
+    padding: 2.5vh;
 }
 
 .skill_image {
-    width: 15vw;
+    width: 20vh;
     float: left;
 }
 
-.skill_container {
-    width: 70vw;
-}
-
 .loading-bar {
-    width: 60vw;
+    width: 40vw;
 }
