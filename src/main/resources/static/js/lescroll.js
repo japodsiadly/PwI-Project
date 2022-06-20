@@ -51,15 +51,17 @@ var leScroll = function (e) {
 
 function animationAdding(sectionNumber) {
     if (parseInt(sectionNumber) === 1) {
-        if (!document.querySelector("#section1_slideRight").classList.contains("slideRight")) {
-            document.querySelector("#section1_slideRight").classList.add("slideRight");
-            document.querySelector("#section1_slideLeft").classList.add("slideLeft");
+        if (!document.querySelector("#section1_slideDown").classList.contains("slideDown")) {
             document.querySelector("#section1_slideDown").classList.add("slideDown");
+            document.querySelector("#section1_slideRight_0").classList.add("slideRight_section_1_0");
+            document.querySelector("#section1_slideRight_1").classList.add("slideRight_section_1_1");
+            document.querySelector("#section1_slideLeft_0").classList.add("slideLeft_section_1_0");
+            document.querySelector("#section1_slideLeft_1").classList.add("slideLeft_section_1_1");
         } else {
             return;
         }
     } else if (parseInt(sectionNumber) === 2) {
-        if (!document.querySelector("#section2_slideDown_0").classList.contains("slideRight")) {
+        if (!document.querySelector("#section2_slideDown_0").classList.contains("slideDown_section_2_0")) {
             document.querySelector("#section2_slideDown_0").classList.add("slideDown_section_2_0");
             setTimeout(function () {
                 move("springBar", 80);
@@ -72,7 +74,7 @@ function animationAdding(sectionNumber) {
             setTimeout(function () {
                 move("cSharpBar", 32);
             }, 1800);
-        } else {
+        } else { //TODO: dodać wjeżdzanie hedera do slajdu 3
             return;
         }
     }
