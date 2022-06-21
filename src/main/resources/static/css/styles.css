@@ -236,3 +236,7 @@ body {
 .loading-bar {
     width: 50vw;
 }
+
+.strength_image {
+    width: 8vmin;
+}
