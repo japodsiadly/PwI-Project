@@ -7,7 +7,8 @@ sendButton.addEventListener('click', () => {
     const language = document.querySelector(".active");
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:8080/sendEmail");
+    // xhr.open("POST", "http://localhost:8080/sendEmail");
+    xhr.open("POST", "https://jakub-portfolio.herokuapp.com//sendEmail");
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
 
