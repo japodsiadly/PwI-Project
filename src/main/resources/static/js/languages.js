@@ -24,6 +24,10 @@ const contactFormMessage = document.querySelector(".contactFormMessage");
 const contactFormMessageHelp = document.querySelector(".contactFormMessageHelp");
 const contactSendButton = document.querySelector(".contactSendButton");
 
+const buttonDiv = document.getElementById('buttonDiv');
+const buttonDiv2 = document.getElementById('buttonDiv2');
+
+
 LangListItem.forEach(el => {
     el.addEventListener('click', () => {
         langList.querySelector('.active').classList.remove('active');
@@ -53,6 +57,16 @@ LangListItem.forEach(el => {
         contactFormMessage.textContent = data[attr].contactFormMessage;
         contactFormMessageHelp.textContent = data[attr].contactFormMessageHelp;
         contactSendButton.textContent = data[attr].contactSendButton;
+
+
+        if (buttonDiv.textContent.length !== 0) {
+            clear();
+            buttonDiv.textContent = data[attr].buttonDiv;
+        }
+        if (buttonDiv2.textContent.length !== 0) {
+            clear();
+            buttonDiv2.textContent = data[attr].buttonDiv2;
+        }
     });
 });
 
@@ -77,10 +91,13 @@ const data = {
             "contactSubheader_0": " Link to my GitHub:",
             "contactSubheader_1": " You can send me a message on my email here:",
             "contactFormSubject": " Subject",
-            "contactFormSubjectHelp": " Max 50 characters",
+            "contactFormSubjectHelp": " Max 50 characters. (Subject can not be empty)",
             "contactFormMessage": " Send me a message",
-            "contactFormMessageHelp": " Max 250 characters",
+            "contactFormMessageHelp": " Max 250 characters. (Message can not be empty)",
             "contactSendButton": " Send",
+
+            "buttonDiv": " Message sent!",
+            "buttonDiv2": " Wrong subject, or message!"
         },
     "polish":
         {
@@ -102,9 +119,17 @@ const data = {
             "contactSubheader_0": " Link do mojego GitHuba:",
             "contactSubheader_1": " Możesz wysłać do mnie wiadomość na mój email tutaj:",
             "contactFormSubject": " Temat",
-            "contactFormSubjectHelp": " Max 50 znaków",
+            "contactFormSubjectHelp": " Max 50 znaków. (Temat nie może być pusty)",
             "contactFormMessage": " Napisz wiadomość do mnie",
-            "contactFormMessageHelp": " Max 250 znaków",
+            "contactFormMessageHelp": " Max 250 znaków. (Wiadomość nie może być pusta)",
             "contactSendButton": " Wyślij",
+
+            "buttonDiv": " Wiadomość wysłana!",
+            "buttonDiv2": " Niepoprawny temat, lub wiadomość!"
         }
+}
+
+function clear() {
+    buttonDiv.textContent = "";
+    buttonDiv2.textContent = "";
 }

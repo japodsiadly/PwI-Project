@@ -58,7 +58,7 @@
                 <div class="content container align-content-center">
                     <div class="row" id="section1_slideDown">
                         <h1 class="header aboutMeHeader"> O mnie:</h1>
-                        <p class="text aboutMeSubheader_0" > Jestem studentem 3 roku na kierunku
+                        <p class="text aboutMeSubheader_0"> Jestem studentem 3 roku na kierunku
                             informatycznym. </p>
                         <p class="subheader aboutMeSubheader_1"> Moje mocne strony: </p>
                     </div>
@@ -67,7 +67,8 @@
                         <div class="col-sm-12 ">
                             <div class="row" id="section1_slideRight_0">
                                 <div class="col-6 listItem aboutMeText_0">
-                                    <img class="strength_image" th:src="@{/images/sketchbook.png}" alt="Sketchbook image"
+                                    <img class="strength_image" th:src="@{/images/sketchbook.png}"
+                                         alt="Sketchbook image"
                                          src="../static/images/sketchbook.png">
                                     <p> Umiem dobrze organizować sobie pracę </p>
                                 </div>
@@ -99,7 +100,8 @@
                                 <div class="col-6 listItem">
                                 </div>
                                 <div class="col-6 listItem aboutMeText_3">
-                                    <img class="strength_image" th:src="@{/images/leadership.png}" alt="Leadership image"
+                                    <img class="strength_image" th:src="@{/images/leadership.png}"
+                                         alt="Leadership image"
                                          src="../static/images/leadership.png">
                                     <p> Umiem poradzić sobie z każdym zadaniem </p>
                                 </div>
@@ -176,10 +178,11 @@
                             <form>
                                 <div class="row mb-3 col-8 contactFORM">
                                     <label for="subjectInput" class="form-label contactFormSubject">Temat:</label>
-                                    <input type="text" class="form-control" id="subjectInput"
-                                           aria-describedby="subjectHelpBlock">
+                                    <textarea type="text" rows="2" cols="60" class="form-control" style="resize: none"
+                                              id="subjectInput" name="subject"
+                                              aria-describedby="subjectHelpBlock"></textarea>
                                     <div id="subjectHelpBlock" class="form-text contactFormSubjectHelp">
-                                        Max 50 znaków.
+                                        Max 50 znaków. (Temat nie może być pusty)
                                     </div>
                                 </div>
 
@@ -188,16 +191,18 @@
                                         mnie</label>
                                     <textarea rows="4" cols="60" class="form-control" style="resize: none"
                                               name="message"
-                                              id="messageInput" aria-describedby="messageHelpBlock"> </textarea>
+                                              id="messageInput" aria-describedby="messageHelpBlock"></textarea>
                                     <div id="messageHelpBlock" class="form-text contactFormMessageHelp"> Max 250
-                                        znaków.
+                                        znaków. (Wiadomość nie może być pusta)
                                     </div>
                                 </div>
 
-                                <div class="row contactFORM" id="buttonDiv">
+                                <div class="row contactFORM">
                                     <button type="button" id="sendMail" class="btn btn-primary contactSendButton">
                                         Wyślij
                                     </button>
+                                    <div class="row textNode" id="buttonDiv"></div>
+                                    <div class="row textNode" id="buttonDiv2"></div>
                                 </div>
                             </form>
                         </div>
