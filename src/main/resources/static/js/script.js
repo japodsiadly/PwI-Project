@@ -7,7 +7,6 @@ sendButton.addEventListener('click', () => {
     const language = document.querySelector(".active");
 
     let xhr = new XMLHttpRequest();
-    // xhr.open("POST", "http://localhost:8080/sendEmail");
     xhr.open("POST", "https://jakub-portfolio.herokuapp.com//sendEmail");
     xhr.setRequestHeader("Accept", "application/json");
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -41,3 +40,10 @@ function clear() {
     buttonDiv.textContent = "";
     buttonDiv2.textContent = "";
 }
+
+let cookieButtons = document.querySelectorAll(".allow-button")
+cookieButtons.forEach(el => {
+    el.addEventListener('click', () => {
+        document.querySelector('.cookie-consent').classList.add('cookie-consent-hidden');
+    })
+});

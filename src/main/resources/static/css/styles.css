@@ -313,3 +313,7 @@ body {
     border: 1px solid green;
     background-color: green;
 }
+
+.cookie-consent-hidden {
+    opacity: 0 !important;
+}
