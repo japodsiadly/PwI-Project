@@ -4,15 +4,15 @@ html {
 }
 
 .header {
-    font-size: 5vw;
+    font-size: 8vmin;
 }
 
 .subheader {
-    font-size: 3vw;
+    font-size: 5vmin;
 }
 
 .text {
-    font-size: 1.5vw;
+    font-size: 3vmin;
 }
 
 #mask {
@@ -106,7 +106,7 @@ nav ul li {
 }
 
 .textNode {
-    font-size: 30px;
+    font-size: 3vmin;
     text-align: center;
     display: flex;
     align-items: center;
@@ -214,27 +214,25 @@ body {
 }
 
 .image {
-    width: 20vw;
+    width: 40vmin;
+    padding-top: 5vmin;
     align-content: center;
     margin: auto;
 }
 
 .listOfStrengths {
-    /*width: 70vw;*/
     height: 70vh;
 }
 
 .listItem {
-    font-size: 1.5vw;
-    /*font-size: 3vh;*/
-    padding: 2.5vh;
+    font-size: 3vmin;
 }
 
 .skill_image {
-    width: 20vh;
+    width: 20vmin;
     float: left;
 }
 
 .loading-bar {
-    width: 40vw;
+    width: 50vw;
 }
