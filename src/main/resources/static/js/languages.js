@@ -87,7 +87,7 @@ const data = {
 
             "skillsHeader": " My skills:",
 
-            "contactHeader": " Contact:",
+            "contactHeader": " Contact",
             "contactSubheader_0": " Link to my GitHub:",
             "contactSubheader_1": " You can send me a message on my email here:",
             "contactFormSubject": " Subject",
@@ -102,7 +102,7 @@ const data = {
     "polish":
         {
             "introductionHeader": " Nazywam się Jakub Podsiadły ",
-            "introductionSubheader": " Jestem Junior Java Spring developerem",
+            "introductionSubheader": " i jestem Junior Java Spring developerem",
             "introductionText": " Jeżeli chcesz wiedzieć więcej o mnie zapraszam do mojego portfolio",
 
             "aboutMeHeader": " O mnie:",
@@ -115,7 +115,7 @@ const data = {
 
             "skillsHeader": " Moje Umiejętności:",
 
-            "contactHeader": " Kontakt:",
+            "contactHeader": " Kontakt",
             "contactSubheader_0": " Link do mojego GitHuba:",
             "contactSubheader_1": " Możesz wysłać do mnie wiadomość na mój email tutaj:",
             "contactFormSubject": " Temat",
