@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="https://japodsiadly.github.io/J-letter.jpg">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <!--        <link rel="stylesheet" th:href="@{/css/reset.css}">-->
     <link rel="stylesheet" th:href="@{/css/styles.css}"/>
 </head>
 <body>
@@ -46,7 +45,8 @@
                         <p class="pacifico header introductionHeader"> Nazywam się Jakub Podsiadły </p>
                     </div>
                     <p class="montserrat subheader introductionSubheader"> i jestem Junior Java Spring developerem </p>
-                    <p class="montserrat text introductionText"> Jeżeli chcesz wiedzieć więcej o mnie zapraszam do mojego
+                    <p class="montserrat text introductionText"> Jeżeli chcesz wiedzieć więcej o mnie zapraszam do
+                        mojego
                         portfolio </p>
                     <div class="image slideUp">
                         <img class="image" th:src="@{/images/programer_image.png}">
@@ -70,7 +70,8 @@
                                     <img class="strength_image" th:src="@{/images/sketchbook.png}"
                                          alt="Sketchbook image"
                                          src="../static/images/sketchbook.png">
-                                    <p class="montserrat text_strenghts aboutMeText_0"> Umiem dobrze organizować sobie pracę </p>
+                                    <p class="montserrat text_strenghts aboutMeText_0"> Umiem dobrze organizować sobie
+                                        pracę </p>
                                 </div>
                                 <div class="col-6 listItem">
                                 </div>
@@ -82,7 +83,8 @@
                                 <div class="col-6 listItem">
                                     <img class="strength_image" th:src="@{/images/search.png}" alt="Search image"
                                          src="../static/images/search.png">
-                                    <p class="montserrat text_strenghts aboutMeText_1"> Przykładam dużą uwagę do szczegółów </p>
+                                    <p class="montserrat text_strenghts aboutMeText_1"> Przykładam dużą uwagę do
+                                        szczegółów </p>
                                 </div>
                             </div>
 
@@ -90,7 +92,8 @@
                                 <div class="col-6 listItem">
                                     <img class="strength_image" th:src="@{/images/study.png}" alt="Study image"
                                          src="../static/images/study.png">
-                                    <p class="montserrat text_strenghts aboutMeText_2"> Szybko uczę się nowych technologii </p>
+                                    <p class="montserrat text_strenghts aboutMeText_2"> Szybko uczę się nowych
+                                        technologii </p>
                                 </div>
                                 <div class="col-6 listItem">
                                 </div>
@@ -103,7 +106,8 @@
                                     <img class="strength_image" th:src="@{/images/leadership.png}"
                                          alt="Leadership image"
                                          src="../static/images/leadership.png">
-                                    <p class="montserrat text_strenghts aboutMeText_3">  Umiem poradzić sobie z każdym zadaniem </p>
+                                    <p class="montserrat text_strenghts aboutMeText_3"> Umiem poradzić sobie z każdym
+                                        zadaniem </p>
                                 </div>
                             </div>
                         </div>
@@ -166,43 +170,51 @@
                     <div class="row">
                         <div class="col-12">
                             <h1 class="staatliches header contactHeader mb-5"> Kontakt</h1>
-                            <h2 class="montserrat subheader contactSubheader_0" style="font-size: 4vmin;"> Link do mojego GitHuba: </h2>
-                            <a class="pressStart2P text " href="https://github.com/japodsiadly"> https://github.com/japodsiadly </a>
+                            <h2 class="montserrat subheader contactSubheader_0" style="font-size: 4vmin;"> Link do
+                                mojego GitHuba: </h2>
+                            <a class="pressStart2P text " href="https://github.com/japodsiadly">
+                                https://github.com/japodsiadly </a>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="montserrat subheader contactSubheader_1 mt-5"> Możesz wysłać do mnie wiadomość na mój email
+                            <h2 class="montserrat subheader contactSubheader_1 mt-5 " style="font-size: 4vmin"> Możesz
+                                wysłać do mnie wiadomość na mój email
                                 tutaj: </h2>
                             <form>
                                 <div class="row mb-3 col-8 contactFORM">
-                                    <label for="subjectInput" class="form-label contactFormSubject">Temat:</label>
-                                    <textarea type="text" rows="2" cols="60" class="form-control" style="resize: none"
+                                    <label for="subjectInput" class="montserrat form-label contactFormSubject "
+                                           style="font-size: 2vmin">Temat:</label>
+                                    <textarea type="text" rows="2" cols="50" class="form-control" style="resize: none"
                                               id="subjectInput" name="subject"
                                               aria-describedby="subjectHelpBlock"></textarea>
-                                    <div id="subjectHelpBlock" class="form-text contactFormSubjectHelp">
+                                    <div id="subjectHelpBlock" class="montserrat form-text contactFormSubjectHelp"
+                                         style="font-size: 2vmin">
                                         Max 50 znaków. (Temat nie może być pusty)
                                     </div>
                                 </div>
 
                                 <div class="row mb-3 col-8 contactFORM">
-                                    <label for="messageInput" class="form-label contactFormMessage">Napisz wiadomość do
+                                    <label for="messageInput" class="montserrat form-label contactFormMessage "
+                                           style="font-size: 2vmin">Napisz wiadomość do
                                         mnie</label>
-                                    <textarea rows="4" cols="60" class="form-control" style="resize: none"
+                                    <textarea rows="4" cols="50" class="form-control" style="resize: none"
                                               name="message"
                                               id="messageInput" aria-describedby="messageHelpBlock"></textarea>
-                                    <div id="messageHelpBlock" class="form-text contactFormMessageHelp"> Max 250
+                                    <div id="messageHelpBlock" class="montserrat form-text contactFormMessageHelp"
+                                         style="font-size: 2vmin"> Max 250
                                         znaków. (Wiadomość nie może być pusta)
                                     </div>
                                 </div>
 
                                 <div class="row contactFORM">
-                                    <button type="button" id="sendMail" class="btn btn-outline-primary contactSendButton">
+                                    <button type="button" id="sendMail" style="font-size: 2vmin"
+                                            class="btn btn-outline-primary contactSendButton montserrat">
                                         Wyślij
                                     </button>
-                                    <div class="row textNode justify-content-center" id="buttonDiv"></div>
-                                    <div class="row textNode justify-content-center" id="buttonDiv2"></div>
+                                    <div class="row textNode justify-content-center montserrat" id="buttonDiv"></div>
+                                    <div class="row textNode justify-content-center montserrat" id="buttonDiv2"></div>
                                 </div>
                             </form>
                         </div>
