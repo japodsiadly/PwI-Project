@@ -13,6 +13,17 @@
 <main>
     <div id="mask">
         <div style="position: sticky; z-index: 1">
+            <div class="cookie-consent ">
+
+                <span>This site uses cookies to enhance user experience. see<a href="#"
+                                                                               class="ml-1 text-decoration-none">
+                    Privacy policy</a> </span>
+                <div class="mt-2 d-flex align-items-center justify-content-center g-2">
+                    <button class="allow-button mr-1">Allow cookies</button>
+                    <button class="allow-button">cancel</button>
+                </div>
+
+            </div>
 
             <button class="btn btn-danger float-end" type="button" data-bs-toggle="collapse"
                     data-bs-target="#languageButton"
@@ -49,7 +60,8 @@
                         mojego
                         portfolio </p>
                     <div class="image slideUp">
-                        <img class="image" th:src="@{/images/programer_image.png}">
+                        <img class="image" src="../static/images/programmer_image.png"
+                             th:src="@{/images/programmer_image.png}" alt="Programmer image">
                     </div>
                 </div>
             </section>
@@ -70,7 +82,7 @@
                                     <img class="strength_image" th:src="@{/images/sketchbook.png}"
                                          alt="Sketchbook image"
                                          src="../static/images/sketchbook.png">
-                                    <p class="montserrat text_strenghts aboutMeText_0"> Umiem dobrze organizować sobie
+                                    <p class="montserrat text_strengths aboutMeText_0"> Umiem dobrze organizować sobie
                                         pracę </p>
                                 </div>
                                 <div class="col-6 listItem">
@@ -83,7 +95,7 @@
                                 <div class="col-6 listItem">
                                     <img class="strength_image" th:src="@{/images/search.png}" alt="Search image"
                                          src="../static/images/search.png">
-                                    <p class="montserrat text_strenghts aboutMeText_1"> Przykładam dużą uwagę do
+                                    <p class="montserrat text_strengths aboutMeText_1"> Przykładam dużą uwagę do
                                         szczegółów </p>
                                 </div>
                             </div>
@@ -92,7 +104,7 @@
                                 <div class="col-6 listItem">
                                     <img class="strength_image" th:src="@{/images/study.png}" alt="Study image"
                                          src="../static/images/study.png">
-                                    <p class="montserrat text_strenghts aboutMeText_2"> Szybko uczę się nowych
+                                    <p class="montserrat text_strengths aboutMeText_2"> Szybko uczę się nowych
                                         technologii </p>
                                 </div>
                                 <div class="col-6 listItem">
@@ -106,7 +118,7 @@
                                     <img class="strength_image" th:src="@{/images/leadership.png}"
                                          alt="Leadership image"
                                          src="../static/images/leadership.png">
-                                    <p class="montserrat text_strenghts aboutMeText_3"> Umiem poradzić sobie z każdym
+                                    <p class="montserrat text_strengths aboutMeText_3"> Umiem poradzić sobie z każdym
                                         zadaniem </p>
                                 </div>
                             </div>
