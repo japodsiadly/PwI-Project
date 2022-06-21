@@ -1,6 +1,6 @@
-let leScroll = function (e) {
+var leScroll = function (e) {
     "use strict";
-    let t = 0, o = document.querySelectorAll("section").length - 1, n = document.getElementById("mask").offsetHeight,
+    var t = 0, o = document.querySelectorAll("section").length - 1, n = document.getElementById("mask").offsetHeight,
         i = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? !0 : !1;
     return e.scrolling = !1, e.move = function () {
         document.getElementById("container").style.top = i ? "-" + t * n + "px" : "-" + t * window.innerHeight + "px"
@@ -29,8 +29,8 @@ let leScroll = function (e) {
 }(leScroll || {});
 !function (e, t, o) {
     "use strict";
-    for (let n = t.getElementsByTagName("li"), i = {up: 38, down: 40}, l = function (t) {
-            let o = 0, n = t || e.event;
+    for (var n = t.getElementsByTagName("li"), i = {up: 38, down: 40}, l = function (t) {
+            var o = 0, n = t || e.event;
             n.wheelDelta ? o = (e.opera ? -1 : 1) * n.wheelDelta / 120 : n.detail && (o = -n.detail / 3), o && c(o)
         },
              c = function (e) {
